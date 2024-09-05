@@ -27,6 +27,6 @@ complete <- function(directory,id = 1:332){
                 new_row_df <- data.frame(id=i,nobs=nobs)
                 df <- rbind(df,new_row_df)
         }
-        print(df)
         setwd(oldwd)
+        df
 }

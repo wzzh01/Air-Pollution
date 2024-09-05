@@ -23,8 +23,8 @@ pollutantmean <- function(directory,pollutant,id = 1:332 ){
                 mydata <- rbind(mydata,read.csv(data[id][i]))
                 }
         y=mean(mydata[[pollutant]],na.rm = TRUE)
-        print(y)
         setwd(oldwd)
+        y
 
 
 }
